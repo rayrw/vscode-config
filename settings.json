@@ -1,62 +1,92 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Fira Mono",
-  "editor.fontSize": 16,
-  "editor.lineHeight": 27,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.editor.showTabs": true,
-  "workbench.activityBar.visible": false,
-  "workbench.iconTheme": "vs-seti",
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
-  "terminal.integrated.lineHeight": 1.8,
-  "terminal.integrated.cursorStyle": "underline",
-  "window.zoomLevel": 0,
-  "javascript.validate.enable": false,
-  "explorer.openEditors.visible": 0,
-  "editor.formatOnSave": false,
-  "java.format.enabled": false,
-  "workbench.colorTheme": "One Monokai",
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
-  },
-  "vim.otherModesKeyBindingsNonRecursive": [
-    {
-        "before": ["u"],
-        "after": [],
-        "commands": [
-            {
-                "command": "undo",
-                "args": []
-            }
-
-        ]
+    "editor.fontFamily": "Fira Mono",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 27,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.editor.showTabs": true,
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "vs-seti",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "terminal.integrated.lineHeight": 1.8,
+    "terminal.integrated.cursorStyle": "underline",
+    "window.zoomLevel": 0,
+    "javascript.validate.enable": false,
+    "explorer.openEditors.visible": 0,
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
     },
-    {
-        "before": ["<C-r>"],
-        "after": [],
-        "commands": [
-            {
-                "command": "redo",
-                "args": []
-            }
-        ]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-d>": true,
-    "<D-d>": true
-  },
-  "python.linting.pep8Path": "pycodestyle",
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintArgs": [
-    "--disable=C0111,C0411,E0401,C0103"
-  ],
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.panel.defaultLocation": "right",
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "java.format.enabled": false,
+    "workbench.colorTheme": "One Monokai",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<D-d>": true
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "python.linting.pep8Path": "pycodestyle",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=C0111,C0411,E0401,C0103"
+    ],
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.panel.defaultLocation": "right",
 }

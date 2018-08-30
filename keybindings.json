@@ -11,36 +11,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+h",
-    "command": "extension.vim_navigateLeft",
-    "when": "vim.active && vim.use<C-w>",
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "extension.vim_navigateDown",
-    "when": "vim.active && vim.use<C-w>",
-  },
-  {
-    "key": "ctrl+k",
-    "command": "extension.vim_navigateUp",
-    "when": "vim.active && vim.use<C-w>",
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "extension.vim_navigateRight",
-    "when": "vim.active && vim.use<C-w>",
-  },
-  {
     "key": "shift+cmd+d",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
